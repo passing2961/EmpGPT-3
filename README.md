@@ -5,7 +5,7 @@
 ![figure](image/empgpt3.PNG)
 
 Use the following to cite our paper:
-```
+```bibtex
 @inproceedings{lee2022does,
   title={Does GPT-3 Generate Empathetic Dialogues? A Novel In-Context Example Selection Method and Automatic Evaluation Metric for Empathetic Dialogue Generation},
   author={Lee, Young-Jun and Lim, Chae-Gyun and Choi, Ho-Jin},
