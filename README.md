@@ -22,7 +22,7 @@ Install the required set of libraries.
 pip install -r requirements.txt
 ```
 
-## 2. Preparing Data & Model Checkpoints
+## 2. Preparing Data
 
 Download the empathetic dialogues dataset from the [ParlAI](https://github.com/facebookresearch/ParlAI) framework. Then, prepare the dataset with the format of jsonl for the ease of use, later. 
 ```
