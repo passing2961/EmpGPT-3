@@ -2,7 +2,7 @@
 
 **This is the official github repository for [Does GPT-3 Generate Empathetic Dialogues? A Novel In-Context Example Selection Method and Automatic Evaluation Metric for Empathetic Dialogue Generation](https://aclanthology.org/2022.coling-1.56/).**
 
-![figure](image/empgpt3.png)
+![figure](image/empgpt3.PNG)
 
 Use the following to cite our paper:
 ```
