@@ -441,6 +441,7 @@ def parse_args():
     parser.add_argument('--emotion_clf_dir', type=str, default=None)
     parser.add_argument('--evaluation_save_dir', type=str, default=None)
     parser.add_argument('--wordcount_dir', type=str, default=None)
+    parser.add_argument('--epitome_save_dir', type=str, default=None)
 
     return parser.parse_args()
 
@@ -494,6 +495,7 @@ if __name__ == '__main__':
     results = get_empathy_emotion(results, emo_clf_args, emo_clf_tokenizer, emo_clf_model, EMPEMO_ID2LABEL)
     
     device = 0
+    opt['epitome_save_dir'] = args.epitome_save_dir
     epitome_empathy_scorer = EmpathyScorer(opt, batch_size=1, cuda_device=device)
 
     results, pred_IP_scores, pred_EX_scores, pred_ER_scores, gt_IP_scores, gt_EX_scores, gt_ER_scores, diff_IP_scores, diff_EX_scores, diff_ER_scores = get_epitome_score(results, epitome_empathy_scorer)
