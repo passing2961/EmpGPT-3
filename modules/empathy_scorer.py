@@ -64,13 +64,13 @@ class EmpathyScorer(nn.Module):
         self.model_EX = BiEncoderAttentionWithRationaleClassification()
         self.model_ER = BiEncoderAttentionWithRationaleClassification()
 
-        IP_weights = torch.load(os.path.join('/path/to/save/dir', 'finetuned_IP.pth'))
+        IP_weights = torch.load(os.path.join(opt['epitome_save_dir'], 'finetuned_IP.pth'))
         self.model_IP.load_state_dict(IP_weights)
 
-        EX_weights = torch.load(os.path.join('/path/to/save/dir', 'finetuned_EX.pth'))
+        EX_weights = torch.load(os.path.join(opt['epitome_save_dir'], 'finetuned_EX.pth'))
         self.model_EX.load_state_dict(EX_weights)
         
-        ER_weights = torch.load(os.path.join('/path/to/save/dir', 'finetuned_ER.pth'))
+        ER_weights = torch.load(os.path.join(opt['epitome_save_dir'], 'finetuned_ER.pth'))
         self.model_ER.load_state_dict(ER_weights)
 
         #self.use_cuda = not opt['no_cuda'] and torch.cuda.is_available()
