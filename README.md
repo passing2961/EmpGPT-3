@@ -57,3 +57,6 @@ This work was supported by the Technology Innovation Program (Grant number: 2001
 
 Please contact [Young-Jun Lee](https://sites.google.com/view/passing2961/%ED%99%88) at yj2961@kaist.ac.kr or passing2961@gmail.com.
 
+## License
+
+This repository is MIT licensed. See the [LICENSE](https://github.com/passing2961/EmpGPT-3/blob/main/LICENSE) file for details.
